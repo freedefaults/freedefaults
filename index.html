@@ -1,1 +1,106 @@
-Coming Soon
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A personal portfolio and selected work.">
+  <title>Your Name | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header" id="home">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="#home">Your Name</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <ul class="nav-links" id="site-menu">
+        <li><a href="#about">About</a></li>
+        <li><a href="#work">Work</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#journey">Journey</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="hero container">
+      <div class="hero-copy">
+        <p class="eyebrow">Personal portfolio</p>
+        <h1>Thoughtful work, made with intention.</h1>
+        <p class="hero-intro">A warm, focused space for the work I make and the outcomes I care about.</p>
+        <a class="button" href="#about">Read about me <span aria-hidden="true">↓</span></a>
+      </div>
+      <div class="avatar-frame">
+        <!-- Replace avatar.jpg with your image filename or image URL. -->
+        <img src="avatar.jpg" alt="A portrait of Your Name">
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="section container intro-section" id="about">
+      <p class="section-number">01 / About</p>
+      <div class="section-content">
+        <h2>About me is where you can understand what I value and how I work.</h2>
+        <div class="about-copy">
+          <!-- Replace this paragraph with your own About Me text. -->
+          <p>Paste your About Me text here. Share the perspective, experiences, and interests that help visitors understand the person behind the work.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="work">
+      <p class="section-number">02 / Work</p>
+      <div class="section-content">
+        <h2>My work shows how I turn thoughtful ideas into useful, finished outcomes.</h2>
+        <p class="placeholder">Evidence coming soon</p>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <p class="section-number">03 / Skills</p>
+      <div class="section-content">
+        <h2>My skills explain the tools and approaches I use to make meaningful progress.</h2>
+        <p class="placeholder">Evidence coming soon</p>
+      </div>
+    </section>
+
+    <section class="section container" id="journey">
+      <p class="section-number">04 / Journey</p>
+      <div class="section-content">
+        <h2>My journey gives context to the experiences that shaped the way I contribute.</h2>
+        <p class="placeholder">Evidence coming soon</p>
+      </div>
+    </section>
+
+    <section class="section container" id="contact">
+      <p class="section-number">05 / Contact</p>
+      <div class="section-content">
+        <h2>Contact me to start a thoughtful conversation about what we could make together.</h2>
+        <p class="placeholder">Evidence coming soon</p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer container">
+    <p>© 2026 Your Name</p>
+    <a href="#home">Back to top ↑</a>
+  </footer>
+
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-links');
+
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      menu.classList.toggle('is-open', !isOpen);
+    });
+
+    menu.querySelectorAll('a').forEach((link) => {
+      link.addEventListener('click', () => {
+        toggle.setAttribute('aria-expanded', 'false');
+        menu.classList.remove('is-open');
+      });
+    });
+  </script>
+</body>
+</html>
