@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 416 416" role="img" aria-labelledby="title desc">
+  <title id="title">Nick's avatar</title>
+  <desc id="desc">A simple black line drawing of a person wearing glasses.</desc>
+  <rect width="416" height="416" fill="#fff"/>
+  <g fill="none" stroke="#111" stroke-linecap="round" stroke-linejoin="round" stroke-width="5">
+    <path d="M168 144c-4-25 15-39 36-38 20 1 41 7 53 2 0 0 2 24-10 34"/>
+    <path d="M168 144l34-25 53 23"/>
+    <path d="M169 144v53c0 24 25 49 39 49h10c14 0 39-25 39-49v-53"/>
+    <path d="M168 151c-11 6-15 14-15 27v15c0 6 4 10 10 10h11v-41"/>
+    <path d="M257 151c11 6 15 14 15 27v15c0 6-4 10-10 10h-11v-41"/>
+    <path d="M177 160h30c3 0 5 3 4 6l-4 17c-1 4-4 6-8 6h-16c-4 0-6-2-7-6l-4-17c-1-3 1-6 5-6z"/>
+    <path d="M239 160h-30c-3 0-5 3-4 6l4 17c1 4 4 6 8 6h16c4 0 6-2 7-6l4-17c1-3-1-6-5-6z"/>
+    <path d="M207 167h2"/>
+    <path d="M187 229v15c0 12 12 23 25 23s25-11 25-23v-15"/>
+    <path d="M187 244l-42 17c-18 8-30 22-30 42v13l50 17h86l50-17v-13c0-20-12-34-30-42l-42-17"/>
+    <path d="M152 276v38M264 276v38M183 333v-29c0-15 13-27 29-27s29 12 29 27v29"/>
+  </g>
+</svg>
