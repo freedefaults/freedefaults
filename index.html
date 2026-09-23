@@ -3,77 +3,34 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="A personal portfolio and selected work.">
-  <title>Nick | Portfolio</title>
+  <meta name="description" content="Nick's portfolio and reflections on artificial intelligence.">
+  <title>Nick's Portfolio</title>
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <header class="site-header" id="home">
     <nav class="nav container" aria-label="Primary navigation">
-      <a class="brand" href="#home">Nick</a>
+      <a class="brand" href="index.html">Nick's Portfolio</a>
       <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
       <ul class="nav-links" id="site-menu">
-        <li><a href="#about">About</a></li>
-        <li><a href="#work">Work</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#journey">Journey</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="history-of-ai.html">History of AI</a></li>
+        <li><a href="ai-ethics.html">AI Ethics</a></li>
+        <li><a href="ai-behavior.html">AI Behavior</a></li>
+        <li><a href="ai-learning.html">AI Learning</a></li>
+        <li><a href="appropriate-ai-use.html">Appropriate AI Use</a></li>
       </ul>
     </nav>
-
-    <div class="hero container">
-      <div class="hero-copy">
-        <p class="eyebrow">Personal portfolio</p>
-        <h1>Thoughtful work, made with intention.</h1>
-        <p class="hero-intro">A warm, focused space for the work I make and the outcomes I care about.</p>
-        <a class="button" href="#about">Read about me <span aria-hidden="true">↓</span></a>
-      </div>
-      <div class="avatar-frame">
-        <img src="avatar.svg" alt="A portrait of Nick">
-      </div>
-    </div>
   </header>
 
   <main>
-    <section class="section container intro-section" id="about">
-      <p class="section-number">01 / About</p>
-      <div class="section-content">
-        <h2>About me is where you can understand what I value and how I work.</h2>
-        <div class="about-copy">
-          <p>Hello! I am Nick. I’m currently studying finance. I am taking this course primarily to fill a credit requirement but that is not the only reason. I think AI is extremely fascinating and a new concept in the world and we are all eager to see what it is going to be and how it is going to affect us in the coming years. I believe this course will give me more insight into how I can adapt to the changes it creates and maybe inform my family and friends as well. I hope to become knowledgeable enough to be able to quell or substantiate any worries I may have or my close friends and family. A big instance of AI raising alarm in my life is employees at Anthropic going public. I can’t justify whether this is general fear mongering in the media or if this is an actual growing crisis because I don’t know enough myself. This is my main concern, are these red flags being raised legitimate or are we able to contain the use of AI to only benefit ourselves and hopefully reach a historic technological utopia? Is this leading to more of a renaissance and revitalization in the arts or are we entering another industrial revolution? I think this is why the course concept of “Identify and discuss ethical issues associated with AI and ML and their societal implications.” fascinates me the most. I want to dive into not only my opinions of what the implications are but also learn if it is similar or different from my peers. Outside of class I am a freelance DJ and music producer, so as of right now I am not concerned that AI will ever take over that realm specifically in the performance aspect but it has been touching into the behind the scenes of music production. I find this irritating but not worrisome because humans as a whole I have found would always rather listen to something human.</p>
-        </div>
+    <section class="about-home container" id="about">
+      <div class="about-copy">
+        <p class="eyebrow">About me</p>
+        <h1>Nick's Portfolio</h1>
+        <p>Hello! I am Nick. I’m currently studying finance. I am taking this course primarily to fill a credit requirement but that is not the only reason. I think AI is extremely fascinating and a new concept in the world and we are all eager to see what it is going to be and how it is going to affect us in the coming years. I believe this course will give me more insight into how I can adapt to the changes it creates and maybe inform my family and friends as well. I hope to become knowledgeable enough to be able to quell or substantiate any worries I may have or my close friends and family. A big instance of AI raising alarm in my life is employees at Anthropic going public. I can’t justify whether this is general fear mongering in the media or if this is an actual growing crisis because I don’t know enough myself. This is my main concern, are these red flags being raised legitimate or are we able to contain the use of AI to only benefit ourselves and hopefully reach a historic technological utopia? Is this leading to more of a renaissance and revitalization in the arts or are we entering another industrial revolution? I think this is why the course concept of “Identify and discuss ethical issues associated with AI and ML and their societal implications.” fascinates me the most. I want to dive into not only my opinions of what the implications are but also learn if it is similar or different from my peers. Outside of class I am a freelance DJ and music producer, so as of right now I am not concerned that AI will ever take over that realm specifically in the performance aspect but it has been touching into the behind the scenes of music production. I find this irritating but not worrisome because humans as a whole I have found would always rather listen to something human.</p>
       </div>
-    </section>
-
-    <section class="section container" id="work">
-      <p class="section-number">02 / Work</p>
-      <div class="section-content">
-        <h2>My work shows how I turn thoughtful ideas into useful, finished outcomes.</h2>
-        <p class="placeholder">Evidence coming soon</p>
-      </div>
-    </section>
-
-    <section class="section container" id="skills">
-      <p class="section-number">03 / Skills</p>
-      <div class="section-content">
-        <h2>My skills explain the tools and approaches I use to make meaningful progress.</h2>
-        <p class="placeholder">Evidence coming soon</p>
-      </div>
-    </section>
-
-    <section class="section container" id="journey">
-      <p class="section-number">04 / Journey</p>
-      <div class="section-content">
-        <h2>My journey gives context to the experiences that shaped the way I contribute.</h2>
-        <p class="placeholder">Evidence coming soon</p>
-      </div>
-    </section>
-
-    <section class="section container" id="contact">
-      <p class="section-number">05 / Contact</p>
-      <div class="section-content">
-        <h2>Contact me to start a thoughtful conversation about what we could make together.</h2>
-        <p class="placeholder">Evidence coming soon</p>
+      <div class="avatar-frame">
+        <img src="avatar.svg" alt="A portrait of Nick">
       </div>
     </section>
   </main>
@@ -86,18 +43,10 @@
   <script>
     const toggle = document.querySelector('.menu-toggle');
     const menu = document.querySelector('.nav-links');
-
     toggle.addEventListener('click', () => {
       const isOpen = toggle.getAttribute('aria-expanded') === 'true';
       toggle.setAttribute('aria-expanded', String(!isOpen));
       menu.classList.toggle('is-open', !isOpen);
-    });
-
-    menu.querySelectorAll('a').forEach((link) => {
-      link.addEventListener('click', () => {
-        toggle.setAttribute('aria-expanded', 'false');
-        menu.classList.remove('is-open');
-      });
     });
   </script>
 </body>
