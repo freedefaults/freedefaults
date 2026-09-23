@@ -1,2 +1,51 @@
 <!doctype html>
-<html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Citations of Use | Nick's Portfolio</title><link rel="stylesheet" href="styles.css"></head><body><header class="site-header"><nav class="nav container" aria-label="Primary navigation"><a class="brand" href="index.html">Nick's Portfolio</a><button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button><ul class="nav-links" id="site-menu"><li><a href="history-of-ai.html">History of AI</a></li><li><a href="ai-ethics.html">AI Ethics</a></li><li><a href="ai-behavior.html">AI Behavior</a></li><li><a href="ai-learning.html">AI Learning</a></li><li><a href="appropriate-ai-use.html">Appropriate AI Use</a></li><li><a href="citations-of-use.html">Citations of Use</a></li></ul></nav></header><main class="page-main container"><div class="page-content"><p class="eyebrow">Portfolio section</p><h1>Citations of Use</h1><p class="concept">Evidence coming soon</p></div></main><a class="home-return" href="index.html">← Return to home</a><script src="menu.js"></script></body></html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Citations of Use | Nick's Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Primary navigation">
+      <a class="brand" href="index.html">Nick's Portfolio</a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-menu">Menu</button>
+      <ul class="nav-links" id="site-menu">
+        <li><a href="history-of-ai.html">History of AI</a></li>
+        <li><a href="ai-ethics.html">AI Ethics</a></li>
+        <li><a href="ai-behavior.html">AI Behavior</a></li>
+        <li><a href="ai-learning.html">AI Learning</a></li>
+        <li><a href="appropriate-ai-use.html">Appropriate AI Use</a></li>
+        <li><a href="citations-of-use.html">Citations of Use</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main container">
+    <div class="page-content">
+      <p class="eyebrow">Portfolio section</p>
+      <h1>Citations of Use</h1>
+      <article class="citation-entry">
+        <h2>Co-Pilot</h2>
+        <p><strong>Date:</strong> 9/23/2026</p>
+        <p><strong>Purpose:</strong> To create my website look and pages.</p>
+        <p><strong>Used for:</strong> Pages, color scheme, vibe, navigation.<br>
+        The about me page and the AI instruction.</p>
+        <p><a href="https://github.com/copilot/share/0a0a42a6-41c4-8e64-a153-3c00447208f8">View the Co-Pilot conversation</a></p>
+      </article>
+    </div>
+  </main>
+
+  <a class="home-return" href="index.html">← Return to home</a>
+  <script>
+    const toggle = document.querySelector('.menu-toggle');
+    const menu = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      const isOpen = toggle.getAttribute('aria-expanded') === 'true';
+      toggle.setAttribute('aria-expanded', String(!isOpen));
+      menu.classList.toggle('is-open', !isOpen);
+    });
+  </script>
+</body>
+</html>
