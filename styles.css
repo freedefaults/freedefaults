@@ -19,6 +19,11 @@ body {
   line-height: 1.7;
   text-align: center;
 }
+/* Apply one typeface and centered text to every page and every site component. */
+body * {
+  font-family: inherit;
+  text-align: center;
+}
 button, input, select, textarea { font: inherit; }
 ::selection { background: var(--blue); color: var(--sand-light); }
 a { color: inherit; }
